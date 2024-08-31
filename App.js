@@ -180,16 +180,16 @@ function App() {
           <h3>Join Event</h3>
           <form>
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" className="input-large" required />
 
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" className="input-large" required />
 
             <label htmlFor="student-id">Student ID:</label>
-            <input type="text" id="student-id" name="student-id" required />
+            <input type="text" id="student-id" name="student-id" className="input-large" required />
 
             <label htmlFor="comments">Comments:</label>
-            <textarea id="comments" name="comments"></textarea>
+            <textarea id="comments" name="comments" className="input-large"></textarea>
 
             <button type="submit">Submit</button>
           </form>
