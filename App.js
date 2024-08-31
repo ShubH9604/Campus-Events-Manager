@@ -28,7 +28,7 @@ function App() {
         <div className="home-content">
           {/* General Home Content */}
           <section id="home" className="content-section">
-            <h2>Explore and participate in various events organized by our college!</h2>
+            <h2 id = "black">Explore and participate in various events organized by our college!</h2>
           </section>
 
           {/* Events Section within Home */}
@@ -36,18 +36,18 @@ function App() {
             <h2 id = "red">Upcoming Events</h2>
             <div className="event-container">
               <div className="event-box">
-                <h3 id = "red">Event 1</h3>
-                <p>Description for event 1 goes here.</p>
+                <h3>Event 1</h3>
+                <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
                 <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
               </div>
               <div className="event-box">
                 <h3>Event 2</h3>
-                <p>Description for event 2 goes here.</p>
+                <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.</p>
                 <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
               </div>
               <div className="event-box">
                 <h3>Event 3</h3>
-                <p>Description for event 3 goes here.</p>
+                <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.</p>
                 <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
               </div>
             </div>
@@ -123,7 +123,7 @@ function App() {
           <div className="event-container">
             <div className="event-box">
               <h3>Event 1</h3>
-              <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology. </p>
+              <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
               <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
             </div>
             <div className="event-box">
