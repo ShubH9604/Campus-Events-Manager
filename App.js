@@ -12,9 +12,13 @@ function App() {
     <div className="App">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <div className="navbar-brand">
-          <a href="#" onClick={() => handleNavClick('home')}>Campus Events Manager</a>
-        </div>
+      <div className="navbar-brand">
+  <a href="#" onClick={() => handleNavClick('home')}>
+    <img src="https://img.icons8.com/?size=160&id=BGWrIxzCqnD3&format=png" alt="Campus Events Manager Logo" className="logo-image" />
+    Campus Events Manager
+  </a>
+</div>
+
         <ul className="navbar-menu">
           <li><a href="#home" onClick={() => handleNavClick('home')}>Home</a></li>
           <li><a href="#events" onClick={() => handleNavClick('events')}>Events</a></li>
@@ -33,7 +37,7 @@ function App() {
 
           {/* Events Section within Home */}
           <section className="content-section">
-            <h2 id = "red">Upcoming Events</h2>
+            <h2>Upcoming Events</h2>
             <div className="event-container">
               <div className="event-box">
                 <h3>Event 1</h3>
@@ -55,18 +59,18 @@ function App() {
 
           {/* About Section within Home */}
           <section className="content-section">
-            <h2 id = "red">About Us</h2>
-            <h3 id = "yellow">Our Mission</h3>
+            <h2>About Us</h2>
+            <h3>Our Mission</h3>
             <p>
               The Campus Events Manager is a dedicated platform created to enhance the student experience by providing easy access to all the events happening across the college. Our mission is to encourage active participation, foster community engagement, and ensure that students are always informed about the various activities and opportunities available to them. Whether it's a workshop, a cultural fest, a guest lecture, or an online seminar, we aim to bring the college community closer through our comprehensive event management system.
             </p>
 
-            <h3 id = "yellow">Our Vision</h3>
+            <h3>Our Vision</h3>
             <p>
               We envision a vibrant campus where students are continuously engaged, learning, and connecting through various events. By offering a streamlined and user-friendly platform, we aim to make event discovery and participation as seamless as possible. Our goal is to be the central hub for all campus-related activities, ensuring that no one misses out on any exciting opportunity.
             </p>
 
-            <h3 id = "yellow">What We Offer</h3>
+            <h3>What We Offer</h3>
             <ul>
               <li>Easy Event Discovery: Quickly find events based on categories like academic, cultural, sports, and online webinars.</li>
               <li>Simple Registration: Register for events with just a few clicks, and keep track of your upcoming events.</li>
@@ -74,7 +78,7 @@ function App() {
               <li>Community Engagement: A platform to meet new people, learn new skills, and make the most of your college life.</li>
             </ul>
 
-            <h3 id = "yellow">Join Us</h3>
+            <h3>Join Us</h3>
             <p>
               Be a part of the Campus Events Manager community and make the most of your time on campus. Whether you are a student looking to participate or a club organizing an event, our platform is here to serve your needs.
             </p>
@@ -82,33 +86,33 @@ function App() {
 
           {/* Contact Section within Home */}
           <section className="content-section">
-            <h2 id = "red">Contact Us</h2>
+            <h2>Contact Us</h2>
 
-            <h3 id = "yellow">General Inquiries</h3>
+            <h3>General Inquiries</h3>
             <p>
               For general questions about the Campus Events Manager, feel free to email us at: 
               <a href="mailto:events@campusmanager.edu"> events@campusmanager.edu</a>
             </p>
 
-            <h3 id = "yellow">Support</h3>
+            <h3>Support</h3>
             <p>
               If you need help or have encountered an issue with our platform, our support team is ready to assist you. Contact us at: 
               <a href="mailto:support@campusmanager.edu"> support@campusmanager.edu</a>
             </p>
 
-            <h3 id = "yellow">Event Organizers</h3>
+            <h3>Event Organizers</h3>
             <p>
               Are you a club or organization looking to promote your event through our platform? Reach out to our event coordination team: 
               <a href="mailto:organizers@campusmanager.edu"> organizers@campusmanager.edu</a>
             </p>
 
-            <h3 id = "yellow">Follow Us</h3>
+            <h3>Follow Us</h3>
             <p>
               Stay updated with the latest news and events by following us on social media:<br />
               <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
             </p>
 
-            <h3 id = "yellow">Feedback</h3>
+            <h3>Feedback</h3>
             <p>
               Your feedback is valuable to us. Please use the form below to send us your suggestions and comments. We are committed to improving our services and making your experience as pleasant as possible.
             </p>
