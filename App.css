@@ -11,7 +11,7 @@ body, html {
 .navbar {
   background-color: #00055c; /* Dark grey for the navbar */
   color: #e0e0e0;
-  padding: 20px 40px;
+  padding: 30px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,14 +190,9 @@ form button:hover {
   vertical-align: middle; /* Align the logo vertically with the text */
 }
 
-#blue{
-  color: #0000FF;
-}
-
-#red{
-  color: #ff0000;
-}
-
-#black{
-  color: #000000;
+.input-large {
+  width: 500px; /* Adjust width */
+  height: 30px; /* Adjust height */
+  padding: 10px; /* Adjust padding for better look */
+  font-size: 18px; /* Adjust font size */
 }
