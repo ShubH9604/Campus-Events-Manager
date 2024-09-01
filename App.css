@@ -546,6 +546,7 @@ ul li {
 /* Hover effect for the submit button */
 .login-container button:hover {
   background-color: #00055c;
+  transform: scale(0.98);
 }
 
 /* Styling for the 'forgot password' link */
