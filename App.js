@@ -21,7 +21,7 @@ function App() {
       <nav className="navbar">
         <div className="navbar-brand">
           <a href="#" onClick={() => handleNavClick('home')}>
-            <img src="https://img.icons8.com/?size=160&id=BGWrIxzCqnD3&format=png" alt="Campus Events Manager Logo" className="logo-image" />
+            <img src="https://img.icons8.com/?size=160&id=H6LtluKL4nwE&format=png" alt="Campus Events Manager Logo" className="logo-image" />
             Campus Events Manager
           </a>
         </div>
@@ -116,45 +116,97 @@ function App() {
     </section>
 
           {/* Contact Section within Home */}
-          <div class="contact-us-tabs">
-        <ul class="tabs">
-            <li class="tab-link current" data-tab="tab-1">General Inquiries</li>
-            <li class="tab-link" data-tab="tab-2">Support</li>
-            <li class="tab-link" data-tab="tab-3">Event Organizers</li>
-            <li class="tab-link" data-tab="tab-4">Follow Us</li>
-            <li class="tab-link" data-tab="tab-5">Feedback</li>
-        </ul>
+          <div class="contact-us-section">
+        <div class="contact-us-tabs">
+            <h2>Connect with Us</h2>
 
-        <div id="tab-1" class="tab-content current card">
-            <p>For general questions about the Campus Events Manager, feel free to email us at:
-                <a href="mailto:events@campusmanager.edu">events@campusmanager.edu</a>
-            </p>
-        </div>
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="tab-1">General Inquiries</li>
+                <li class="tab-link" data-tab="tab-2">Support</li>
+                <li class="tab-link" data-tab="tab-3">Event Organizers</li>
+                <li class="tab-link" data-tab="tab-4">Follow Us</li>
+                <li class="tab-link" data-tab="tab-5">Feedback</li>
+            </ul>
 
-        <div id="tab-2" class="tab-content card">
-            <p>If you need help or have encountered an issue with our platform, our support team is ready to assist you. Contact us at:
-                <a href="mailto:support@campusmanager.edu">support@campusmanager.edu</a>
-            </p>
-        </div>
+            <div id="tab-1" class="tab-content current card">
+                <h3>General Inquiries</h3>
+                <p>If you have general questions about our Campus Events Manager platform, we're here to help! Whether you're a student, faculty member, or community partner, we're happy to answer any questions you may have. You might reach out to us for a variety of reasons, such as:</p>
+                <ul>
+                    <li>Understanding the features and benefits of our event management system.</li>
+                    <li>Inquiring about how to get your event featured or highlighted on our platform.</li>
+                    <li>Asking about partnerships, sponsorships, or collaborations with our team.</li>
+                    <li>Requesting more information on how our platform can help your student organization.</li>
+                    <li>Seeking general advice on navigating our platform or utilizing specific tools.</li>
+                </ul>
+                <p>Our team is committed to ensuring you have the information you need to make the most of our services. Feel free to send your questions to our general inquiry email, and we'll respond as quickly as possible:</p>
+                <p><strong>Email:</strong> <a href="mailto:events@campusmanager.edu">events@campusmanager.edu</a></p>
+                <p>We look forward to connecting with you!</p>
+            </div>
 
-        <div id="tab-3" class="tab-content card">
-            <p>Are you a club or organization looking to promote your event through our platform? Reach out to our event coordination team:
-                <a href="mailto:organizers@campusmanager.edu">organizers@campusmanager.edu</a>
-            </p>
-        </div>
+            <div id="tab-2" class="tab-content card">
+                <h3>Support</h3>
+                <p>Our support team is dedicated to helping you resolve any issues you may encounter while using our platform. Here’s how we can assist you:</p>
+                <ul>
+                    <li>Technical issues such as login problems, bugs, or errors.</li>
+                    <li>Questions about your account, including password resets and profile updates.</li>
+                    <li>Guidance on using specific features or tools within the platform.</li>
+                    <li>Troubleshooting problems with event creation, editing, or management.</li>
+                    <li>Assistance with integrating third-party services or plugins.</li>
+                </ul>
+                <p>We strive to provide timely and effective support to ensure your experience with our platform is smooth and enjoyable. Please reach out to our support team at:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@campusmanager.edu">support@campusmanager.edu</a></p>
+                <p>We're here to help!</p>
+            </div>
 
-        <div id="tab-4" class="tab-content card">
-            <p>Stay updated with the latest news and events by following us on social media:<br />
-                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-            </p>
-        </div>
+            <div id="tab-3" class="tab-content card">
+                <h3>Event Organizers</h3>
+                <p>Are you a club, organization, or individual looking to host an event on campus? Our event coordination team is here to support you. Here’s what we can help with:</p>
+                <ul>
+                    <li>Guidance on how to list your event on our platform.</li>
+                    <li>Best practices for promoting your event to reach a wider audience.</li>
+                    <li>Information on securing venues and coordinating logistics.</li>
+                    <li>Assistance with creating engaging event content and visuals.</li>
+                    <li>Tips on managing event registrations and tracking attendance.</li>
+                </ul>
+                <p>Our goal is to help you create successful and impactful events that enrich the campus community. For more information, contact our event coordination team:</p>
+                <p><strong>Email:</strong> <a href="mailto:organizers@campusmanager.edu">organizers@campusmanager.edu</a></p>
+                <p>Let's work together to make your event a success!</p>
+            </div>
 
-        <div id="tab-5" class="tab-content card">
-            <p>Your feedback is valuable to us. Please use the form below to send us your suggestions and comments. We are committed to improving our services and making your experience as pleasant as possible.
-            </p>
+            <div id="tab-4" class="tab-content card">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us to receive the latest updates, news, and event information. Follow us on social media to:</p>
+                <ul>
+                    <li>Get real-time announcements about upcoming events and activities.</li>
+                    <li>See photos and highlights from past events.</li>
+                    <li>Participate in community discussions and engage with other students.</li>
+                    <li>Share your own event experiences and photos.</li>
+                    <li>Stay informed about campus happenings and important dates.</li>
+                </ul>
+                <p>Join our online community and never miss out on what's happening around campus. Follow us on:</p>
+                <p>
+                    <a href="#"><img src = "https://img.icons8.com/?size=96&id=16713&format=png"/></a>  <a href="#"><img src = "https://img.icons8.com/?size=96&id=Xy10Jcu1L2Su&format=png"/></a> | <a href="#"><img src = "https://img.icons8.com/?size=96&id=xuvGCOXi8Wyg&format=png"/></a>
+                </p>
+                <p>We look forward to connecting with you!</p>
+            </div>
+
+            <div id="tab-5" class="tab-content card">
+                <h3>Feedback</h3>
+                <p>Your feedback is invaluable to us as we continually strive to improve our platform and services. We welcome your thoughts, suggestions, and comments on:</p>
+                <ul>
+                    <li>Your overall experience using the Campus Events Manager.</li>
+                    <li>Ideas for new features or improvements.</li>
+                    <li>Feedback on specific events or experiences.</li>
+                    <li>Suggestions for additional support resources or information.</li>
+                    <li>General comments about what you love or what can be better.</li>
+                </ul>
+                <p>Please use the form below to send us your feedback. We are committed to making your experience with our platform as positive and productive as possible:</p>
+                <p><strong>Email:</strong> <a href="mailto:feedback@campusmanager.edu">feedback@campusmanager.edu</a></p>
+                <p>Thank you for helping us grow and improve!</p>
+            </div>
         </div>
     </div>
-
+    
         </div>
       )}
 
