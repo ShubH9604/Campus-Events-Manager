@@ -31,6 +31,7 @@ function App() {
           <li><a href="#events" onClick={() => handleNavClick('events')}>Events</a></li>
           <li><a href="#about" onClick={() => handleNavClick('about')}>About</a></li>
           <li><a href="#contact" onClick={() => handleNavClick('contact')}>Contact</a></li>
+          <li><a href="#login" onClick={() => handleNavClick('login')}>Login</a></li>
         </ul>
       </nav>
 
@@ -356,14 +357,26 @@ function App() {
         </section>
       )}
 
-          {/* Display selected event details beside the form */}
-          {selectedEvent && (
-            <div className="selected-event-details">
-              <h3>Event Details</h3>
-              <p><strong>Name:</strong> {selectedEvent.name}</p>
-              <p><strong>Description:</strong> {selectedEvent.description}</p>
-            </div>
-          )}
+{currentSection === 'login' && (
+  <div class = "loginbody">
+        <div class="login-container">
+          <h2>Login</h2>
+          <form action="#" method="post">
+          <div class="input-container">
+                <img src="https://img.icons8.com/?size=512&id=59808&format=png" alt="User Icon"/>
+                <input type="text" placeholder="Username" name="username" required/>
+          </div>
+          <div class="input-container">
+                <img src="https://img.icons8.com/?size=512&id=59743&format=png" alt="Password Icon"/>
+                <input type="password" placeholder="Password" name="password" required/>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+        </div>
+        </div>
+      )}
+
     </div>
   );
 }
