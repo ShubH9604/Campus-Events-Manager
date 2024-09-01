@@ -84,7 +84,7 @@ body, html {
 }
 
 .event-box {
-  background-color: #42e0ff;
+  background-color: #87cefa;
   border-radius: 10px;
   padding: 20px ;
   width: 300px;
@@ -98,7 +98,6 @@ body, html {
 }
 
 .event-box:hover {
-  background-color: #42e0ff;
   transform: translateY(-5px);
 }
 
@@ -126,7 +125,7 @@ body, html {
 .event-box button:hover {
   transform: scale(1.05);
   color: #000000;
-  border: 1.5px solid #000000;
+  border: 2px solid #000000;
 }
 
 
@@ -166,7 +165,6 @@ form button {
 }
 
 form button:hover {
-  background-color: #ff4d4d ;
   transform: scale(1.05);
 }
 
@@ -255,12 +253,12 @@ form button:hover {
 
 .about-section {
   width: 35%; /* Adjust width to occupy only part of the screen */
-  background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
   padding: 20px 20px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   margin-right: 20px; /* Add some space on the right */
   margin-left: 2%;
+  background-color: #ff9f1e;
 }
 
 .about-tabs {
@@ -269,7 +267,7 @@ form button:hover {
 
 .about-header {
   font-size: 32px;
-  color: #333;
+  color: #000000;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -279,7 +277,7 @@ form button:hover {
 .about-tab-link {
   cursor: pointer;
   padding: 15px 20px;
-  background: #ffffff;
+  background: #00055c;
   border-radius: 8px;
   margin-bottom: 12px;
   border: 1px solid #ccc;
@@ -288,31 +286,31 @@ form button:hover {
   font-size: 18px;
   display: flex;
   align-items: center;
-  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #555;
+  color: #ffffff;
 }
 
 .about-tab-link i {
   margin-right: 12px;
-  color: #42a5f5;
+  color: #87cefa;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .about-tab-link:hover {
-  background: #e3f2fd;
+  background: #00055c;
   transform: translateY(-3px);
-  color: #333;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-tab-link:hover i {
-  color: #1e88e5;
+  color: #00055c;
 }
 
 .about-tab-link.current {
   background: #00055c;
-  color: white;
+  color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -361,55 +359,131 @@ ul li {
   text-align: center;
 }
 
-.contact-us-tabs {
-  width: 55%;
-  margin: -810px auto;
-  margin-left: 43%;
-  margin-right: 2%;
-}
+.contact-us-section {
+            text-align: center;
+        }
 
-.tabs {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  background: #e0e0e0;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
+        .contact-us-tabs {
+            width: 55%;
+            margin: 40px auto;
+            background-color: #ff9f1e; /* Same background as selected tab */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.tab-link {
-  cursor: pointer;
-  padding: 10px 20px;
-  background: #ddd;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
+        .contact-us-tabs h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #000000;
+        }
 
-.tab-link.current {
-  background: #00055c;
-  color: white;
-}
+        .tabs {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background: #e0e0e0;
+            margin: 10px 0 0 0; /* Adjust margin to control spacing */
+            border-bottom: 1px solid #ccc;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
 
-.tab-content {
-  display: none;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 10px;
-  position: relative; /* Position relative for line effect */
-}
+        .tab-link {
+            cursor: pointer;
+            padding: 10px 20px;
+            background: #ddd;
+            transition: background 0.3s ease;
+        }
 
-.tab-content.current {
-  display: block;
-}
+        .tab-link.current {
+            background: #42e0ff;
+            color: #000000;
+        }
 
-/* Card-like design */
-.card {
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 10px;
-}
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none; /* Remove border-top to connect with tabs */
+            border-radius: 0 0 5px 5px; /* Rounded corners for the bottom */
+            background-color: #fff;
+        }
 
+        .tab-content.current {
+            display: block;
+        }
+
+        /* Card-like design */
+        .card {
+            background: #fff;
+            padding: 20px;
+        }
+
+        .contact-us-section {
+            text-align: center;
+        }
+
+        .contact-us-tabs {
+            width: 55%;
+            margin: 40px auto;
+            background-color: #ff9f1e; /* Same background as selected tab */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: -810px auto;
+            margin-left: 43%;
+            margin-right: 2%;
+        }
+
+        .contact-us-tabs h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #000000;
+        }
+
+        .tabs {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            background: #e0e0e0;
+            margin: 10px 0 0 0; /* Adjust margin to control spacing */
+            border-bottom: 1px solid #ccc;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .tab-link {
+            cursor: pointer;
+            padding: 10px 20px;
+            background: #ddd;
+            transition: background 0.3s ease;
+        }
+
+        .tab-link.current {
+            background: #00055c;
+            color: #ffffff;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none; /* Remove border-top to connect with tabs */
+            border-radius: 0 0 5px 5px; /* Rounded corners for the bottom */
+            background-color: #fff;
+        }
+
+        .tab-content.current {
+            display: block;
+        }
+
+        /* Card-like design */
+        .card {
+            background: #fff;
+            padding: 20px;
+        }
+
+      
