@@ -47,29 +47,29 @@ function App() {
             <h2>Upcoming Events</h2>
             <div className="event-container">
               <div className="event-box">
-                <h3>Event 1</h3>
-                <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
+                <h3>Tech Innovaters</h3>
+                <p>A showcase of the latest tech advancements. Network with industry leaders and explore emerging trends.</p>
                 <button onClick={() => handleJoinEvent({ name: 'Event 1', description: 'A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.' })}>
                   Join Event
                 </button>
               </div>
               <div className="event-box">
-                <h3>Event 2</h3>
-                <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.</p>
+                <h3>Annual Art Gala</h3>
+                <p>Celebrate visual arts with exhibitions from renowned artists. Enjoy creativity, art appreciation, and a lively atmosphere.</p>
                 <button onClick={() => handleJoinEvent({ name: 'Event 2', description: 'A vibrant event celebrating visual arts, featuring exhibitions from renowned artists.' })}>
                   Join Event
                 </button>
               </div>
               <div className="event-box">
-                <h3>Event 3</h3>
-                <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.</p>
+                <h3>Summer Music Fest</h3>
+                <p>An outdoor festival featuring popular bands and solo artists. Enjoy live music, food, and vibrant, exciting fun throughout the day.</p>
                 <button onClick={() => handleJoinEvent({ name: 'Event 3', description: 'An outdoor music festival featuring performances by popular bands and solo artists.' })}>
                   Join Event
                 </button>
               </div>
               <div className="event-box">
-                <h3>Event 4</h3>
-                <p>A platform for emerging startups to present their ideas to investors and industry experts. Gain insights and potential funding opportunities for new ventures.</p>
+                <h3>Startup Pitch Day</h3>
+                <p>Emerging startups present their ideas to investors. Gain insights and explore potential funding opportunities for ventures.</p>
                 <button onClick={() => handleJoinEvent({ name: 'Event 4', description: 'A platform for emerging startups to present their ideas to investors and industry experts.' })}>
                   Join Event
                 </button>
@@ -146,57 +146,57 @@ function App() {
           <h2 id="red">Upcoming Events</h2>
           <div className="event-container">
             <div className="event-box">
-              <h3>Event 1</h3>
-              <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
+              <h3>Tech Innovators</h3>
+              <p>A showcase of the latest tech advancements. Network with industry leaders and explore emerging trends.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 1', description: 'A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 2</h3>
-              <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.</p>
+              <h3>Annual Art Gala</h3>
+              <p>Celebrate visual arts with exhibitions from renowned artists. Enjoy creativity, art appreciation, and a lively atmosphere.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 2', description: 'A vibrant event celebrating visual arts, featuring exhibitions from renowned artists.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 3</h3>
-              <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.</p>
+              <h3>Summer Music Fest</h3>
+              <p>An outdoor festival featuring popular bands and solo artists. Enjoy live music, food, and vibrant, exciting fun throughout the day.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 3', description: 'An outdoor music festival featuring performances by popular bands and solo artists.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 4</h3>
-              <p>A platform for emerging startups to present their ideas to investors and industry experts. Gain insights and potential funding opportunities for new ventures.</p>
+              <h3>Startup Pitch Day</h3>
+              <p>Emerging startups present their ideas to investors. Gain insights and explore potential funding opportunities for ventures.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 4', description: 'A platform for emerging startups to present their ideas to investors and industry experts.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 5</h3>
-              <p>A unique culinary experience where attendees can learn from top chefs and taste gourmet dishes. Explore new flavors and cooking techniques in a fun and interactive environment.</p>
+              <h3>Cultural Heritage Fair</h3>
+              <p>Experience global cultures through performances, food, and crafts. Enjoy diverse traditions and interactive exhibits.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 5', description: 'A unique culinary experience where attendees can learn from top chefs and taste gourmet dishes.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 6</h3>
-              <p>A sports tournament bringing together teams from different colleges for a series of exciting competitions. Showcase your skills and sportsmanship in various disciplines.</p>
+              <h3>Health & Wellness Expo</h3>
+              <p>Explore health and wellness through workshops, fitness classes, and exhibits. Learn about healthy living and products.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 6', description: 'A sports tournament bringing together teams from different colleges for a series of exciting competitions.' })}>
                 Join Event
               </button>
             </div>
             <div className="event-box">
-              <h3>Event 7</h3>
-              <p>A coding bootcamp designed to help participants learn new programming skills and techniques. Ideal for beginners and experienced developers alike.</p>
+              <h3>Entrepreneurship Workshop</h3>
+              <p>A hands-on workshop for aspiring entrepreneurs. Learn business strategies, startup management, and gain practical skills.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 7', description: 'A coding bootcamp designed to help participants learn new programming skills and techniques.' })}>
                 Join Event
               </button>
               </div>
               <div className="event-box">
-              <h3>Event 8</h3>
-              <p>An environmental awareness workshop focusing on sustainable practices and green technologies. Learn how to make a positive impact on the environment.</p>
+              <h3>Environmental Awareness</h3>
+              <p>A seminar on environmental issues and sustainability. Participate in discussions and activities promoting ecological conservation.</p>
               <button onClick={() => handleJoinEvent({ name: 'Event 8', description: 'An environmental awareness workshop focusing on sustainable practices and green technologies.' })}>
                 Join Event
               </button>
