@@ -462,7 +462,7 @@ ul li {
         .tab-link {
             cursor: pointer;
             padding: 10px 20px;
-            background: #ddd;
+            background: #e0e0e0;
             transition: background 0.3s ease;
         }
 
