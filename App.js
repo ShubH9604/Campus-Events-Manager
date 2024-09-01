@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('home'); // State to manage which section is visible
-  const [selectedEvent, setSelectedEvent] = useState(null); // State to store the selected event details
+  const [currentSection, setCurrentSection] = useState('home');
+  const [selectedEvent, setSelectedEvent] = useState(null);
 
   const handleNavClick = (section) => {
     setCurrentSection(section);
@@ -11,8 +11,8 @@ function App() {
 
   // Function to handle event click and set the selected event
   const handleJoinEvent = (eventDetails) => {
-    setSelectedEvent(eventDetails); // Set the selected event details
-    setCurrentSection('joinEvent'); // Switch to joinEvent section
+    setSelectedEvent(eventDetails);
+    setCurrentSection('joinEvent');
   };
 
   return (
@@ -78,31 +78,42 @@ function App() {
           </section>
 
           {/* About Section within Home */}
-          <section className="content-section">
-            <h2>About Us</h2>
-            <h3>Our Mission</h3>
-            <p>
-              The Campus Events Manager is a dedicated platform created to enhance the student experience by providing easy access to all the events happening across the college. Our mission is to encourage active participation, foster community engagement, and ensure that students are always informed about the various activities and opportunities available to them. Whether it's a workshop, a cultural fest, a guest lecture, or an online seminar, we aim to bring the college community closer through our comprehensive event management system.
-            </p>
+          <section class = "aboutbody">
+          <section class="about-section">
+          <div class="about-tabs">
+            <h1 class="about-header">About Us</h1>
+            <div class="about-tab-link current" data-tab="about-tab-1"><i class="fas fa-bullseye"></i> Our Mission</div>
+            <div id="about-tab-1" class="about-tab-content current">
+                <p>
+                    The Campus Events Manager is a dedicated platform created to enhance the student experience by providing easy access to all the events happening across the college. Our mission is to encourage active participation, foster community engagement, and ensure that students are always informed about the various activities and opportunities available to them. Whether it's a workshop, a cultural fest, a guest lecture, or an online seminar, we aim to bring the college community closer through our comprehensive event management system.
+                </p>
+            </div>
 
-            <h3>Our Vision</h3>
-            <p>
-              We envision a vibrant campus where students are continuously engaged, learning, and connecting through various events. By offering a streamlined and user-friendly platform, we aim to make event discovery and participation as seamless as possible. Our goal is to be the central hub for all campus-related activities, ensuring that no one misses out on any exciting opportunity.
-            </p>
+            <div class="about-tab-link" data-tab="about-tab-2"><i class="fas fa-eye"></i> Our Vision</div>
+            <div id="about-tab-2" class="about-tab-content">
+                <p>
+                    We envision a vibrant campus where students are continuously engaged, learning, and connecting through various events. By offering a streamlined and user-friendly platform, we aim to make event discovery and participation as seamless as possible. Our goal is to be the central hub for all campus-related activities, ensuring that no one misses out on any exciting opportunity.
+                </p>
+            </div>
 
-            <h3>What We Offer</h3>
-            <ul>
-              <li>Easy Event Discovery: Quickly find events based on categories like academic, cultural, sports, and online webinars.</li>
-              <li>Simple Registration: Register for events with just a few clicks, and keep track of your upcoming events.</li>
-              <li>Stay Informed: Receive updates and reminders about the events you are interested in.</li>
-              <li>Community Engagement: A platform to meet new people, learn new skills, and make the most of your college life.</li>
-            </ul>
+            <div class="about-tab-link" data-tab="about-tab-3"><i class="fas fa-gift"></i> What We Offer</div>
+            <div id="about-tab-3" class="about-tab-content">
+                <ul>
+                    <li><strong>Enhanced Management :</strong> Simplifies participation, encouraging more students and staff to get involved in college events.</li>
+                    <li><strong>Streamlined Processes :</strong> Automates registration, ticketing, and communication, saving time and reducing administrative workload.</li>
+                    <li><strong>Improved Communication :</strong> The platform keeps the college community informed about upcoming events and changes, ensuring everyone stays engaged with campus activities.</li>
+                </ul>
+            </div>
 
-            <h3>Join Us</h3>
-            <p>
-              Be a part of the Campus Events Manager community and make the most of your time on campus. Whether you are a student looking to participate or a club organizing an event, our platform is here to serve your needs.
-            </p>
-          </section>
+            <div class="about-tab-link" data-tab="about-tab-4"><i class="fas fa-users"></i> Join Us</div>
+            <div id="about-tab-4" class="about-tab-content">
+                <p>
+                    Be a part of the Campus Events Manager community and make the most of your time on campus. Whether you are a student looking to participate or a club organizing an event, our platform is here to serve your needs.
+                </p>
+            </div>
+        </div>
+    </section>
+    </section>
 
           {/* Contact Section within Home */}
           <section className="content-section">
@@ -110,7 +121,7 @@ function App() {
 
             <h3>General Inquiries</h3>
             <p>
-              For general questions about the Campus Events Manager, feel free to email us at: 
+              For general questions about the Campus Events Manager, feel free to email us at:
               <a href="mailto:events@campusmanager.edu"> events@campusmanager.edu</a>
             </p>
 
@@ -204,6 +215,7 @@ function App() {
           </div>
         </section>
       )}
+      
 
       {/* Join Event Form Section */}
       {currentSection === 'joinEvent' && (
@@ -232,7 +244,7 @@ function App() {
           {/* About Section */}
       {currentSection === 'about' && (
         <section id="about" className="content-section">
-          <h2>About Us</h2>
+          <h1 class = "Aboutus">About Us</h1>
           <h3>Our Mission</h3>
           <p>
             The Campus Events Manager is a dedicated platform created to enhance the student experience by providing easy access to all the events happening across the college. Our mission is to encourage active participation, foster community engagement, and ensure that students are always informed about the various activities and opportunities available to them. Whether it's a workshop, a cultural fest, a guest lecture, or an online seminar, we aim to bring the college community closer through our comprehensive event management system.
@@ -244,23 +256,17 @@ function App() {
 
           <h3>What We Offer</h3>
           <ul>
-            <li>Easy Event Discovery: Quickly find events based on categories like academic, cultural, sports, and online webinars.</li>
-            <li>Simple Registration: Register for events with just a few clicks, and keep track of your upcoming events.</li>
-            <li>Stay Informed: Receive updates and reminders about the events you are interested in.</li>
-            <li>Community Engagement: A platform to meet new people, learn new skills, and make the most of your college life.</li>
+            <li><strong>Enhanced Management :</strong> Simplifies participation, encouraging more students and staff to get involved in college events.</li>
+            <li><strong>Streamlined Processes :</strong> Automates registration, ticketing, and communication, saving time and reducing administrative workload.</li>
+            <li><strong>Improved Communication :</strong> The platform keeps the college community informed about upcoming events and changes, ensuring everyone stays engaged with campus activities.</li>
           </ul>
-
-          <h3>Join Us</h3>
-          <p>
-            Be a part of the Campus Events Manager community and make the most of your time on campus. Whether you are a student looking to participate or a club organizing an event, our platform is here to serve your needs.
-          </p>
         </section>
       )}
 
       {/* Contact Section */}
       {currentSection === 'contact' && (
         <section id="contact" className="content-section">
-          <h2>Contact Us</h2>
+          <h1 class = "Contactus">Contact Us</h1>
           <h3>General Inquiries</h3>
           <p>
             For general questions about the Campus Events Manager, feel free to email us at:
