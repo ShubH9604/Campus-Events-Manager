@@ -116,38 +116,45 @@ function App() {
     </section>
 
           {/* Contact Section within Home */}
-          <section className="content-section">
-            <h2>Contact Us</h2>
+          <div class="contact-us-tabs">
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">General Inquiries</li>
+            <li class="tab-link" data-tab="tab-2">Support</li>
+            <li class="tab-link" data-tab="tab-3">Event Organizers</li>
+            <li class="tab-link" data-tab="tab-4">Follow Us</li>
+            <li class="tab-link" data-tab="tab-5">Feedback</li>
+        </ul>
 
-            <h3>General Inquiries</h3>
-            <p>
-              For general questions about the Campus Events Manager, feel free to email us at:
-              <a href="mailto:events@campusmanager.edu"> events@campusmanager.edu</a>
+        <div id="tab-1" class="tab-content current card">
+            <p>For general questions about the Campus Events Manager, feel free to email us at:
+                <a href="mailto:events@campusmanager.edu">events@campusmanager.edu</a>
             </p>
+        </div>
 
-            <h3>Support</h3>
-            <p>
-              If you need help or have encountered an issue with our platform, our support team is ready to assist you. Contact us at: 
-              <a href="mailto:support@campusmanager.edu"> support@campusmanager.edu</a>
+        <div id="tab-2" class="tab-content card">
+            <p>If you need help or have encountered an issue with our platform, our support team is ready to assist you. Contact us at:
+                <a href="mailto:support@campusmanager.edu">support@campusmanager.edu</a>
             </p>
+        </div>
 
-            <h3>Event Organizers</h3>
-            <p>
-              Are you a club or organization looking to promote your event through our platform? Reach out to our event coordination team: 
-              <a href="mailto:organizers@campusmanager.edu"> organizers@campusmanager.edu</a>
+        <div id="tab-3" class="tab-content card">
+            <p>Are you a club or organization looking to promote your event through our platform? Reach out to our event coordination team:
+                <a href="mailto:organizers@campusmanager.edu">organizers@campusmanager.edu</a>
             </p>
+        </div>
 
-            <h3>Follow Us</h3>
-            <p>
-              Stay updated with the latest news and events by following us on social media:<br />
-              <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        <div id="tab-4" class="tab-content card">
+            <p>Stay updated with the latest news and events by following us on social media:<br />
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
             </p>
+        </div>
 
-            <h3>Feedback</h3>
-            <p>
-              Your feedback is valuable to us. Please use the form below to send us your suggestions and comments. We are committed to improving our services and making your experience as pleasant as possible.
+        <div id="tab-5" class="tab-content card">
+            <p>Your feedback is valuable to us. Please use the form below to send us your suggestions and comments. We are committed to improving our services and making your experience as pleasant as possible.
             </p>
-          </section>
+        </div>
+    </div>
+
         </div>
       )}
 
