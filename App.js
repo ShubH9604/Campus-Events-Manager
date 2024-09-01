@@ -3,9 +3,16 @@ import './App.css';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('home'); // State to manage which section is visible
+  const [selectedEvent, setSelectedEvent] = useState(null); // State to store the selected event details
 
   const handleNavClick = (section) => {
     setCurrentSection(section);
+  };
+
+  // Function to handle event click and set the selected event
+  const handleJoinEvent = (eventDetails) => {
+    setSelectedEvent(eventDetails); // Set the selected event details
+    setCurrentSection('joinEvent'); // Switch to joinEvent section
   };
 
   return (
@@ -42,20 +49,34 @@ function App() {
               <div className="event-box">
                 <h3>Event 1</h3>
                 <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
-                <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+                <button onClick={() => handleJoinEvent({ name: 'Event 1', description: 'A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.' })}>
+                  Join Event
+                </button>
               </div>
               <div className="event-box">
                 <h3>Event 2</h3>
                 <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.</p>
-                <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+                <button onClick={() => handleJoinEvent({ name: 'Event 2', description: 'A vibrant event celebrating visual arts, featuring exhibitions from renowned artists.' })}>
+                  Join Event
+                </button>
               </div>
               <div className="event-box">
                 <h3>Event 3</h3>
                 <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.</p>
-                <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+                <button onClick={() => handleJoinEvent({ name: 'Event 3', description: 'An outdoor music festival featuring performances by popular bands and solo artists.' })}>
+                  Join Event
+                </button>
+              </div>
+              <div className="event-box">
+                <h3>Event 4</h3>
+                <p>A platform for emerging startups to present their ideas to investors and industry experts. Gain insights and potential funding opportunities for new ventures.</p>
+                <button onClick={() => handleJoinEvent({ name: 'Event 4', description: 'A platform for emerging startups to present their ideas to investors and industry experts.' })}>
+                  Join Event
+                </button>
               </div>
             </div>
           </section>
+
           {/* About Section within Home */}
           <section className="content-section">
             <h2>About Us</h2>
@@ -127,48 +148,58 @@ function App() {
             <div className="event-box">
               <h3>Event 1</h3>
               <p>A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.</p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <button onClick={() => handleJoinEvent({ name: 'Event 1', description: 'A gathering of tech enthusiasts and industry leaders showcasing the latest advancements in technology.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 2</h3>
-              <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>A vibrant event celebrating visual arts, featuring exhibitions from renowned artists. Enjoy an evening of creativity and art appreciation.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 2', description: 'A vibrant event celebrating visual arts, featuring exhibitions from renowned artists.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 3</h3>
-              <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>An outdoor music festival featuring performances by popular bands and solo artists. Enjoy live music, food, and a lively atmosphere.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 3', description: 'An outdoor music festival featuring performances by popular bands and solo artists.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 4</h3>
-              <p>A platform for emerging startups to present their ideas to investors and industry experts. Gain insights and potential funding opportunities for new ventures.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>A platform for emerging startups to present their ideas to investors and industry experts. Gain insights and potential funding opportunities for new ventures.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 4', description: 'A platform for emerging startups to present their ideas to investors and industry experts.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 5</h3>
-              <p>An event highlighting diverse cultural traditions through performances, food, and crafts. Experience the richness of global cultures in one place.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>A unique culinary experience where attendees can learn from top chefs and taste gourmet dishes. Explore new flavors and cooking techniques in a fun and interactive environment.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 5', description: 'A unique culinary experience where attendees can learn from top chefs and taste gourmet dishes.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 6</h3>
-              <p>A comprehensive event focusing on health and wellness with workshops, fitness classes, and exhibits. Learn about healthy living and explore wellness products.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>A sports tournament bringing together teams from different colleges for a series of exciting competitions. Showcase your skills and sportsmanship in various disciplines.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 6', description: 'A sports tournament bringing together teams from different colleges for a series of exciting competitions.' })}>
+                Join Event
+              </button>
             </div>
             <div className="event-box">
               <h3>Event 7</h3>
-              <p>A hands-on workshop designed for aspiring entrepreneurs to learn about business strategies and startup management. Gain practical skills and expert advice.
-              </p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
-            </div>
-            <div className="event-box">
+              <p>A coding bootcamp designed to help participants learn new programming skills and techniques. Ideal for beginners and experienced developers alike.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 7', description: 'A coding bootcamp designed to help participants learn new programming skills and techniques.' })}>
+                Join Event
+              </button>
+              </div>
+              <div className="event-box">
               <h3>Event 8</h3>
-              <p>A seminar dedicated to environmental issues and sustainability practices.Promoting ecological conservation and awareness.</p>
-              <button onClick={() => setCurrentSection('joinEvent')}>Join Event</button>
+              <p>An environmental awareness workshop focusing on sustainable practices and green technologies. Learn how to make a positive impact on the environment.</p>
+              <button onClick={() => handleJoinEvent({ name: 'Event 8', description: 'An environmental awareness workshop focusing on sustainable practices and green technologies.' })}>
+                Join Event
+              </button>
             </div>
           </div>
         </section>
@@ -196,7 +227,9 @@ function App() {
         </section>
       )}
 
-      {/* About Section */}
+      
+
+          {/* About Section */}
       {currentSection === 'about' && (
         <section id="about" className="content-section">
           <h2>About Us</h2>
@@ -257,6 +290,15 @@ function App() {
           </p>
         </section>
       )}
+
+          {/* Display selected event details beside the form */}
+          {selectedEvent && (
+            <div className="selected-event-details">
+              <h3>Event Details</h3>
+              <p><strong>Name:</strong> {selectedEvent.name}</p>
+              <p><strong>Description:</strong> {selectedEvent.description}</p>
+            </div>
+          )}
     </div>
   );
 }
