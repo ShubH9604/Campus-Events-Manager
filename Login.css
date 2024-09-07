@@ -1,0 +1,205 @@
+/* Container for the entire login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #2eb8b8;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Left side with the image */
+.login-left {
+    width: 50%;
+}
+
+.login-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right side with tagline and login form */
+.login-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #22458b;
+}
+
+/* Default border style */
+.login-content {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: #22458b;
+    padding: 40px;
+    border-radius: 12px;
+    animation: slideIn 1s ease-in-out;
+    color: #22458b;
+}
+
+/* Active state for login-content */
+.login-active {
+    background-color: #ffffff;
+    color: #22458b;
+}
+
+/* Hide the border when only buttons are visible */
+.no-border {
+    border: none;
+}
+
+/* Tagline style */
+.main-tagline {
+    font-size: 42px; /* Adjusted font size */
+    font-weight: 700;
+    color: #000000; /* Blue color */
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.7; /* Adjust line height to ensure the tagline fits well */
+}
+
+/* Smaller font size when only CampusSync is shown */
+.single-tagline {
+    font-size: 36px; /* Adjusted font size for the single "CampusSync" */
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.tagline {
+    font-size: 28px; /* Adjusted font size */
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4; /* Adjust line height to ensure the tagline fits well */
+    font-style: italic;
+}
+
+/* Button group for Login and Register buttons */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Buttons styling */
+.register-button {
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #000000; /* Blue background */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+    transform: translateY(-5px);
+}
+
+/* Form headers for Login and Register */
+.form-header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* Login form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin: 12px 0;
+}
+
+.login-form input {
+    padding: 14px 40px; /* Added padding for the icon space */
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, transform 0.2s;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 70px; /* Place icon inside the input, at the start */
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 18px;
+}
+
+/* Adjust input padding to make space for the icon */
+.input-container input {
+    padding-left: 40px; /* Space for the icon */
+}
+
+.login-form input:hover {
+    border-color: #0056b3;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Login and Register buttons */
+.login-button {
+    padding: 14px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #000000;
+    transform: translateY(-5px);
+}
+
+/* Forgot password and register links */
+.forgot-password,
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.forgot-password a,
+.register-text a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password a:hover,
+.register-text a:hover {
+    color: #000000;
+}
+
+/* Animation for content sliding in */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
