@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Campus Clubs</h1>
+    <p class="text-center">Discover and join clubs that match your interests!</p>
+    <div class="row">
+        {% for club in clubs %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ club.image_url }}" class="card-img-top" alt="{{ club.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ club.name }}</h5>
+                    <p class="card-text">{{ club.description|truncatewords:15 }}</p>
+                    <a href="{% url 'club_detail' club.id %}" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
